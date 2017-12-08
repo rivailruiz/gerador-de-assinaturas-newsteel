@@ -33,8 +33,6 @@
     }
     .right {
       display: inline-block;
-      position: absolute;
-      padding: 6px 0px;
       margin-left: 15px;
       line-height: 20px;
     }
@@ -56,7 +54,7 @@
       letter-spacing: 5px;
     }
     .down {
-      margin-top: 20px;
+      margin-top: 10px;
     }
     .down p {
       margin: 0;
@@ -101,18 +99,27 @@
                 <div dir="ltr">
                   <br style="font-size:12.8px">
                   <div class="assinatura">
+                      <table >
+                          <tbody>
+                            <tr>
+                              <td><div class="logo"><img src="https://i.imgur.com/6WNxhf2.jpg" alt="logo" /></div></td>
+                              <td>
+                                <div class="right">
+                                  <div class="nome"><span>{{ $ctrl.model.name }}</span></div><span class="ball">●</span><div class="setor"><span class="cargo">{{ $ctrl.model.cargo }}</span></div>
+                                  <div class="tel"><span>Tel: +55 {{ $ctrl.model.cellphone }}</span> </div>
+                                  <div class="site">www.newsteel.com.br</div>
+                                  <div class="down">
+                                    <span class="channel">CANAL DE ÉTICA</span>
+                                    <span class="tel">Tel: +55 0800 606 6916</span>
+                                    <div class="site">www.contatoseguro.com.br/newsteel</div>
+                                  </div>
+                                </div>  
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       
-                      <div class="logo"><img src="https://i.imgur.com/6WNxhf2.jpg" alt="logo" /></div>
-                      <div class="right">
-                        <div class="nome"><span>{{ $ctrl.model.name }}</span></div><span class="ball">●</span><div class="setor"><span class="cargo">{{ $ctrl.model.cargo }}</span></div>
-                        <div class="tel"><span>Tel: +55 {{ $ctrl.model.cellphone }}</span> </div>
-                        <div class="site">www.newsteel.com.br</div>
-                        <div class="down">
-                          <span class="channel">CANAL DE ÉTICA</span>
-                          <span class="tel">Tel: +55 0800 606 6916</span>
-                          <div class="site">www.contatoseguro.com.br/newsteel</div>
-                        </div>
-                      </div>  
+                       
                     </div>
 
                     
