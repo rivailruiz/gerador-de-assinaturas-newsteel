@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rivailruiz/gerador-de-assinaturas-newsteel/issues"
   },
-  "homepage": "https://github.com/rivailruiz/gerador-de-assinaturas-newsteel#readme"
+  "homepage": "https://github.com/rivailruiz/gerador-de-assinaturas-newsteel#readme",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
 }
