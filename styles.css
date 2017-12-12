@@ -88,6 +88,7 @@ img {
 .ball {
   display: inline-block;
   color: #36ad58;
+  margin-right: 3px;
 }
 .cargo {
   font-weight: normal;
@@ -113,7 +114,4 @@ a:visited {
 }
 .channel {
   display: block;
-}
-#refresh {
-  margin-bottom: 20px;
 }

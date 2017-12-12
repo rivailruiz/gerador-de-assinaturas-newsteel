@@ -10,4 +10,8 @@ $(document).ready(function(){
         $('.cargo').text(cargo);
         e.preventDefault();
     });
+
+    $('#help').on('click', function(){
+        $('#modal1').modal('open');
+    });
 });
