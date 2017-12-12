@@ -9,63 +9,12 @@
     <link rel="stylesheet" href="styles.css">
     <link href="favicon.png" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
-    <script defer src="//code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   </head>
 
-  <style>
-    .assinatura {
-      font-family: 'Roboto', sans-serif;
-      color: #426053;
-      font-weight: bold;
-    }
-    .nome, .setor {
-      display: inline-block;
-      margin-right: 3px;
-    }
+  <body>
 
-    img {
-      width: 100%;
-      height: auto;
-    }
-    .logo {
-      display: inline-block;
-      width: 200px;
-    }
-    .right {
-      display: inline-block;
-      margin-left: 15px;
-      line-height: 20px;
-    }
-    .setor {
-      margin: 0;
-    }
-    .ball {
-      display: inline-block;
-      color: #36ad58;
-    }
-    .cargo {
-      font-weight: normal;
-      color: #58ac7f !important; 
-    }
-    .tel {
-      color: #58ac7f !important; 
-    }
-    .site {
-      letter-spacing: 5px;
-    }
-    .down {
-      margin-top: 10px;
-    }
-    .down p {
-      margin: 0;
-    }
-    .channel {
-      display: block;
-    }
-  </style>
-  <body ng-app="email" ng-controller="MainCtrl as $ctrl">
-
-    <div ng-cloak class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
 
       <div class="demo-ribbon"></div>
       <main class="demo-main mdl-layout__content">
@@ -78,17 +27,20 @@
 
             <form action="#">
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" id="name" type="text" ng-model="$ctrl.model.name">
+                <input class="mdl-textfield__input" id="name" type="text">
                 <label class="mdl-textfield__label" for="name">Nome</label>
               </div>
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" id="cellphone" type="text" mask="(99) 99999?-9999" mask-validate="false" ng-model="$ctrl.model.cellphone">
+                <input class="mdl-textfield__input" id="cellphone" type="text" mask="(99) 99999?-9999" mask-validate="false" >
                 <label class="mdl-textfield__label" for="cellphone">Telefone</label>
               </div>
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" id="cargo" type="text" ng-model="$ctrl.model.cargo">
+                <input class="mdl-textfield__input" id="cargo" type="text" >
                 <label class="mdl-textfield__label" for="cargo">Setor</label>
               </div>
+              <button id="refresh" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect copyButton" >
+                Atualizar
+              </button>
             </form>
 
             <div ng-show="$ctrl.model.name && $ctrl.model.email" class="demo-card-wide mdl-card mdl-shadow--2dp">
@@ -105,13 +57,13 @@
                               <td><div class="logo"><img src="https://i.imgur.com/6WNxhf2.jpg" alt="logo" /></div></td>
                               <td>
                                 <div class="right">
-                                  <div class="nome"><span>{{ $ctrl.model.name }}</span></div><span class="ball">●</span><div class="setor"><span class="cargo">{{ $ctrl.model.cargo }}</span></div>
-                                  <div class="tel"><span>Tel: +55 {{ $ctrl.model.cellphone }}</span> </div>
-                                  <div class="site">www.newsteel.com.br</div>
+                                  <div class="nome"><span class="nome"></span></div><span class="ball">●</span><div class="setor"><span class="cargo"></span></div>
+                                  <div class="tel"><span></span> </div>
+                                  <div class="site"><a href="http://www.newsteel.com.br">www.newsteel.com.br</a> </div>
                                   <div class="down">
                                     <span class="channel">CANAL DE ÉTICA</span>
                                     <span class="tel">Tel: +55 0800 606 6916</span>
-                                    <div class="site">www.contatoseguro.com.br/newsteel</div>
+                                    <div class="site"><a href="http://www.contatoseguro.com.br/newsteel">www.contatoseguro.com.br/newsteel</a> </div>
                                   </div>
                                 </div>  
                               </td>
@@ -121,21 +73,39 @@
                     </div>
                 </div>
               </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect copyButton" ng-click="$ctrl.copy()">
+              <!-- <div class="mdl-card__actions mdl-card--border">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect copyButton" >
                   Copiar para área de transferência
                 </button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </main>
     </div>
 
+      <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+  
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+<!-- 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ngMask/3.1.1/ngMask.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-md5/0.1.10/angular-md5.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js" type="text/javascript"></script>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js" type="text/javascript"></script> -->
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ 
+    <script src="script_ruiz.js"></script>
   </body>
 </html>

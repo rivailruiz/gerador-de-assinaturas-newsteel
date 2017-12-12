@@ -57,3 +57,63 @@
 .mdl-card {
   width: 97%;
 }
+
+
+.assinatura {
+  font-family: 'Roboto', sans-serif;
+  color: #426053;
+  font-weight: bold;
+}
+.nome, .setor {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.logo {
+  display: inline-block;
+  width: 200px;
+}
+.right {
+  display: inline-block;
+  margin-left: 15px;
+  line-height: 20px;
+}
+.setor {
+  margin: 0;
+}
+.ball {
+  display: inline-block;
+  color: #36ad58;
+}
+.cargo {
+  font-weight: normal;
+  color: #58ac7f !important; 
+}
+.tel {
+  color: #58ac7f !important; 
+}
+a:link {
+  color: #426053;
+}
+a:visited {
+  color: #426053
+}
+.site {
+  letter-spacing: 5px;
+}
+.down {
+  margin-top: 10px;
+}
+.down p {
+  margin: 0;
+}
+.channel {
+  display: block;
+}
+#refresh {
+  margin-bottom: 20px;
+}
