@@ -40,9 +40,13 @@
                 <input class="mdl-textfield__input" id="cargo" type="text" >
                 <label class="mdl-textfield__label" for="cargo">Setor</label>
               </div>
+              <input type='file' id="imgInp" />
               <button id="refresh" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect copyButton" >
                 Atualizar
               </button>
+              <!-- <button  id="copia" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect copyButton" >
+                Copiar para área de transferência
+              </button> -->
               
             </form>
 
@@ -53,11 +57,11 @@
               <div class="mdl-card__supporting-text signature-container" id="signature-container">
                 <div dir="ltr">
                   <br style="font-size:12.8px">
-                  <div class="assinatura">
+                  <div id="assinaturaEmail" class="assinatura">
                       <table >
                           <tbody>
                             <tr>
-                              <td><div class="logo"><img src="https://i.imgur.com/6WNxhf2.jpg" alt="logo" /></div></td>
+                              <td><div class="logo"><img id="blah" src="https://i.imgur.com/6WNxhf2.jpg" alt="logo" /></div></td>
                               <td>
                                 <div class="right">
                                   <div class="nome"><span class="nome"></span></div><span class="ball">●</span><div class="setor"><span class="cargo"></span></div>
